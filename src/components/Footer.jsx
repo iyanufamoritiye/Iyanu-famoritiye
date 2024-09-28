@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="text-gray-400  flex flex-col items-center justify-center gap-4 xl:gap-0  xl:justify-between xl:flex-row p-3 xl:p-16">
+      <div className="text-gray-400  flex flex-col items-center justify-center gap-2 xl:gap-0  xl:justify-between xl:flex-row px-6  py-12 xl:p-16">
         <div className="flex justify-between items-center  gap-4">
           <div>
             <p className=" text-sm text-center  md:text-base">
