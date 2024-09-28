@@ -22,7 +22,7 @@ const WockSection1 = () => {
     {
       image: XProject,
       projectName: "Website",
-      company: "KodeKamp",
+      company: "KodeCamp",
       title: "X-Project",
       link: "https://x-project-fe-ten.vercel.app/",
       description: `Collaborated with a team to build Kodecamp X, a platform that provides accessible 
@@ -40,7 +40,7 @@ const WockSection1 = () => {
     {
       image: Ecommerce,
       projectName: "Website",
-      company: "KodeKamp",
+      company: "KodeCamp",
       title: "Online Store",
       link: "https://myecommerce-zeta-six.vercel.app/",
       description: `Built an eCommerce website where users can add products, 
@@ -58,7 +58,7 @@ const WockSection1 = () => {
     {
       image: User_dashboard,
       projectName: "Website",
-      company: "KodeKamp",
+      company: "KodeCamp",
       title: "User Dashboard",
       link: "https://user-dashboard-eosin-beta.vercel.app/",
       description: `Built a user dashboard where users can create and manage their accounts, 
@@ -67,7 +67,7 @@ const WockSection1 = () => {
     {
       image: LandingPage,
       projectName: "Website",
-      company: "KodeKamp",
+      company: "KodeCamp",
       title: "Landing Page",
       link: "https://myecommerce-zeta-six.vercel.app/",
       description: `Built a simple landing page.`,
@@ -75,7 +75,7 @@ const WockSection1 = () => {
     {
       image: country_api,
       projectName: "Website",
-      company: "KodeKamp",
+      company: "KodeCamp",
       title: "countries API",
       link: "https://countriesapi-2b1k.vercel.app/",
       description: `Built a simple landing page.`,
@@ -83,7 +83,7 @@ const WockSection1 = () => {
     {
       image: todo_list,
       projectName: "Website",
-      company: "KodeKamp",
+      company: "KodeCamp",
       title: "Todo List",
       link: "https://todolist-nine-rosy.vercel.app/",
       description: `Built a full-stack todo item list where users can manage their tasks.`,
@@ -91,7 +91,7 @@ const WockSection1 = () => {
     {
       image: todo_list,
       projectName: "Website",
-      company: "KodeKamp",
+      company: "KodeCamp",
       title: "Todo List API (CSR)",
       link: "https://todo-list-my-api.vercel.app/",
       description: `Built a todo list where users can add, update, and delete items, 
@@ -100,7 +100,7 @@ const WockSection1 = () => {
     {
       image: todo_list,
       projectName: "Website",
-      company: "KodeKamp",
+      company: "KodeCamp",
       title: "Todo List API (SSR)",
       link: "https://todo-ssr-sigma.vercel.app/todos",
       description: `Built a todo list where users can add, update, and delete items, 

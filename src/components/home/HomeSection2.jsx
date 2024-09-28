@@ -15,7 +15,7 @@ const HomeSection2 = () => {
     {
       image: XProject,
       projectName: "Website",
-      company: "KodeKamp",
+      company: "KodeCamp",
       title: "X-Project",
       link: "https://x-project-fe-ten.vercel.app/",
       description: `Collaborated with a team to build Kodecamp X, a platform that provides accessible 
@@ -33,7 +33,7 @@ const HomeSection2 = () => {
     {
       image: Ecommerce,
       projectName: "Website",
-      company: "KodeKamp",
+      company: "KodeCamp",
       title: "Online Store",
       link: "https://myecommerce-zeta-six.vercel.app/",
       description: `Built an eCommerce website where users can add products, 
