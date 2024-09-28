@@ -9,10 +9,8 @@ import LandingPage from "/assets/LandingPage.png";
 import todo_list from "/assets/todo_list.png";
 import code_magazine from "/assets/code_magazine.png";
 import country_api from "/assets/country_api.png";
-country_api;
-
+import portfolio from "/assets/portfolio.png";
 import Decadev from "/assets/Decadev.png";
-
 import { ArrowDownToLine } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import CustomButton from "../button/CustomButton";
@@ -50,6 +48,14 @@ const WockSection1 = () => {
         manage cart items, and purchase and receive product deliveries.`,
     },
     {
+      image: portfolio,
+      projectName: "Website",
+      company: "Personal",
+      title: "My Portfolio",
+      link: "https://my-portfolio-silk-three-88.vercel.app/",
+      description: `Built my personal Portfolio using ReactJs and tailwind CSS.`,
+    },
+    {
       image: User_dashboard,
       projectName: "Website",
       company: "KodeKamp",
@@ -66,7 +72,6 @@ const WockSection1 = () => {
       link: "https://myecommerce-zeta-six.vercel.app/",
       description: `Built a simple landing page.`,
     },
-
     {
       image: country_api,
       projectName: "Website",
