@@ -1,0 +1,7 @@
+#navLink a.active {
+  color: #e54545;
+}
+
+#navLink a:hover {
+  color: #e54545;
+}
