@@ -37,7 +37,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 inline-flex items-center justify-start gap-1 text-primary-600 font-medium hover:underline"
+          className="mt-4 inline-flex items-center justify-start gap-1 text-primary-light font-medium hover:underline"
         >
           View Project <ArrowUpRight className="h-4 w-4" />
         </a>

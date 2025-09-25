@@ -1,5 +1,6 @@
+import WockSection1 from "@/components/Works/WockSection1";
 import React from "react";
-import WockSection1 from "../components/Works/WockSection1";
+
 
 const Works = () => {
   return (

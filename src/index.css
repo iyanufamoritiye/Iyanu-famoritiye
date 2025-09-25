@@ -1,8 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import "tailwindcss";
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@200..800&display=swap');
-@import "./components/InputComponent/styleinput.css";
-@import "./components/button/stylebutton.css";
 
 
 @keyframes marquee {
@@ -28,19 +25,70 @@
 .animate-marquee {
   animation: marquee 15s linear infinite;
 }
+.primary {
+  --color-app-bg: #061C3D;
+  --color-app-bg-main: #062844;
+  --color-app-text: #E5E7EB;
+  --color-app-text-light: #FFFFFF;
+  --color-app-text-dark: #99A1AF;
+}
+
+.dark {
+  --color-app-bg: #0F172A;
+  --color-app-bg-main: #1E293B;
+  --color-app-text: #F8FAFC;
+  --color-app-text-light: #E2E8F0;
+  --color-app-text-dark: #94A3B8;
+}
+
+.light {
+  --color-app-bg: #F9FAFB;
+  --color-app-bg-main: #E5E7EB;
+  --color-app-text: #111827;
+  --color-app-text-light: #2563EB;
+  --color-app-text-dark: #374151;
+}
+
+.secondary {
+  --color-app-bg: #BC6C25;        /* rustic orange */
+  --color-app-bg-main: #DDA15E;   /* warm tan */
+  --color-app-text: #1E293B;      
+  --color-app-text-light: #F2C94C; /* golden highlight */
+  --color-app-text-dark: #475569; 
+}
+
+.success {
+  --color-app-bg: #3A5A40;        /* earthy army green */
+  --color-app-bg-main: #A3B18A;   /* sage green */
+  --color-app-text: #FEFAE0;      /* cream */
+  --color-app-text-light: #DDE5B6;/* pale olive */
+  --color-app-text-dark: #283618; /* dark olive */
+}
+
+.info {
+  --color-app-bg: #E0F2FE;        /* sky blue */
+  --color-app-bg-main: #93C5FD;   /* medium pastel blue */
+  --color-app-text: #0F172A;      /* dark navy */
+  --color-app-text-light: #38BDF8;/* cyan accent */
+  --color-app-text-dark: #1E40AF; /* royal navy */
+}
+
+
 
 :root {
-  --color-app-bg: #ffffff;
-  --color-app-text: #111111;
-  --color-app-primary: #3B82F6;
+  --inline-app-bg: var(--color-app-bg);
+  --inline-app-bg-main: var(--color-app-bg-main);
 
-  --color-primary-light: #f9e9c7;
-  --color-primary: #f2c354;
-  --color-primary-dark: #b68f1c;
-
-  --color-secondary-light: #b5b4b5;
-  --color-secondary: #5f5e5f;
-  --color-secondary-dark: #2e2e2e;
+  --inline-app-text: var(--color-app-text);
+  --inline-app-text-light: var(--color-app-text-light);
+  --inline-app-text-dark: var(--color-app-text-dark);
+  --color-primary-light: #036DC4;
+  --color-primary: #062844  ;   
+  --color-primary-dark: #061C3D;  
+  
+  --color-secondary-light: #f9e9c7;
+  --color-secondary: #f2c354;
+  --color-secondary-dark: #b68f1c;
 
   --color-success-light: #66c463;
   --color-success: #0b8600;
@@ -57,25 +105,20 @@
   --color-info-light: #6ec6f0;
   --color-info: #0288d1;
   --color-info-dark: #015082;
-  --font-app-font:  'Lato';
+  --font-app-font:  'Manrope';
 }
-
-[data-theme="dark"] {
-  --color-app-bg: #000000;
-  --color-app-text: #ffffff;
-  --color-app-primary: #60A5FA;
-}
-
-[data-theme="primary"] {
-  --color-app-bg: #3B82F6;
-  --color-app-text: #ffffff;
-  --color-app-primary: #1D4ED8;
+body {
+  font-family: var(--font-app-font);
 }
 
 @theme inline {
-  --color-app-bg:  var(--color-app-primary) ;
-  --color-app-text:  var(--color-app-primary) ;
-  --color-app-primary:  var(--color-app-primary) ;
+  --color-app-text: var(--color-app-text);
+  --color-app-text-light: var(--color-app-text-light);
+  --color-app-text-dark: var(--color-app-text-dark);
+
+  /* Background Colors */
+  --color-app-bg: var(--color-app-bg);
+  --color-app-bg-main: var(--color-app-bg-main);;
 
   --color-grey: var(--color-grey);
   --color-grey-dark: var(--color-grey-dark);
@@ -109,3 +152,235 @@
   --font-app-font: var(--font-app-font);
 }
 
+.styled-input {
+  @apply transition-all duration-300  
+   ease-linear placeholder:text-gray-500   inline-block  
+     font-app-font  text-gray-900 
+    bg-gray-50;
+}
+
+/* Hover State */
+
+.styled-input:hover {
+  @apply placeholder:text-primary;
+}
+
+/* Focused State */
+.styled-input:focus {
+  @apply outline-none   placeholder:text-gray-200;
+}
+
+/* Active State (when user is clicking) */
+.styled-input:active {
+  @apply text-gray-900;
+}
+.styled-input:disabled {
+  @apply bg-gray-200 text-gray-400 border-gray-200 cursor-not-allowed;
+}
+
+/* Entered State (when user has typed something) */
+.styled-inputzvalid {
+  @apply ring-1 ring-primary-light font-app-font  text-primary-light;
+}
+
+/* Invalid State */
+.styled-input-invalid {
+  @apply text-error-light font-app-font ring-1 ring-error-light;
+}
+
+/* Error Message */
+.error-message {
+  @apply font-app-font  text-xs  text-error-light;
+}
+
+/* Label Default */
+.input-label {
+  @apply text-gray-900 font-app-font;
+}
+
+.input-label-valid {
+  @apply text-primary-light font-app-font;
+}
+/*  sizing funtion  */
+.size-small {
+  @apply px-4 py-1 text-xs;
+}
+.size-medium {
+  @apply px-4 py-2 text-sm;
+}
+.size-large {
+  @apply px-4 py-3 text-base;
+}
+#navLinks a {
+  @apply text-white; /* Ensure default text color is white */
+}
+#navLinks a.active {
+  @apply text-secondary;
+}
+
+#navLinks a:hover {
+  @apply text-secondary;
+}
+
+.labels {
+  @apply underline-offset-8  underline decoration-4  decoration-[#036dc4];
+}
+.button-primary {
+  @apply text-white bg-gray-400 font-app-font 
+     inline-block    transition-all duration-300 ease-linear;
+  /*   please  specify width sizes */
+}
+
+/* Hover State */
+.button-primary:hover {
+  @apply bg-primary text-white;
+}
+
+/* Active State */
+.button-primary:active {
+  @apply bg-primary-light  text-white;
+}
+
+/* Disabled State */
+.button-primary-disabled {
+  @apply bg-primary-light opacity-50 text-gray-50 cursor-not-allowed pointer-events-none;
+}
+
+/* Secondary */
+
+/* Default State */
+.button-Secondary {
+  @apply text-secondary-light bg-white -inset-1 border border-secondary-light font-app-font  
+      inline-block    transition-all duration-300 ease-linear;
+  /*   please  specify width sizes */
+}
+
+/* Hover State */
+.button-Secondary:hover {
+  @apply bg-secondary-dark  border-secondary-dark text-white;
+}
+
+/* Active State */
+.button-Secondary:active {
+  @apply bg-secondary-light  border-secondary-light text-white;
+}
+
+/* Disabled State */
+.button-Secondary-disabled {
+  @apply bg-secondary opacity-50 text-gray-900 cursor-not-allowed pointer-events-none;
+}
+
+/* text */
+
+/* Default State */
+.button-text {
+  @apply text-gray-400  bg-white  font-app-font  
+   inline-block     transition-all duration-300 ease-linear;
+  /*   please  specify width sizes */
+}
+
+/* Hover State */
+.button-text:hover {
+  @apply text-secondary-dark;
+}
+
+/* Active State */
+.button-text:active {
+  @apply text-secondary-light;
+}
+
+/* Disabled State */
+.button-text:disabled {
+  @apply opacity-50 text-gray-400 cursor-not-allowed pointer-events-none;
+}
+
+/* white*/
+
+/* Default State */
+.button-white {
+  @apply text-gray-50 border border-gray-50  bg-white font-app-font 
+  inline-block  transition-all duration-300 ease-linear;
+  /*   please  specify width sizes */
+}
+
+/* Hover State */
+.buttonS-white:hover {
+  @apply text-gray-800   bg-gray-50;
+}
+
+/* Active State */
+.button-white:active {
+  @apply text-gray-800   bg-gray-50;
+}
+
+/* Disabled State */
+.button-white-disabled {
+  @apply opacity-50 text-gray-900 bg-gray-400 cursor-not-allowed pointer-events-none;
+}
+
+/* dark*/
+
+/* Default State */
+.button-dark {
+  @apply text-white   bg-gray-400  font-app-font  
+   inline-block  transition-all duration-300 ease-linear;
+  /*   please  specify width sizes */
+}
+
+/* Hover State */
+.button-dark:hover {
+  @apply bg-gray-900;
+}
+
+/* Active State */
+.button-dark:active {
+  @apply bg-gray-800;
+}
+
+/* Disabled State */
+.button-dark-disabled {
+  @apply opacity-50 bg-gray-100 cursor-not-allowed pointer-events-none;
+}
+
+/* ----------------below are navigaion button and link =---------------------- */
+
+/* primary button for navigation */
+
+.button-primary-nav {
+  @apply text-white bg-primary font-app-font 
+     inline-block    transition-all duration-300 ease-linear;
+  /*   please  specify width sizes */
+}
+
+/* Hover State */
+.button-primary-nav:hover {
+  @apply bg-primary-light text-white;
+}
+
+/* Active State */
+.buttonS-primary-nav:active {
+  @apply bg-primary-dark  text-white;
+}
+
+/* Disabled State */
+.buttonS-primary-nav-disabled {
+  @apply bg-primary opacity-50 text-gray-50 cursor-not-allowed pointer-events-none;
+}
+
+/* links  */
+
+.link-primary {
+  @apply text-primary font-app-font  
+     inline-block    transition-all duration-300 ease-linear;
+  /*   please  specify width sizes */
+}
+
+/* Hover State */
+.link-primary:hover {
+  @apply text-primary-light;
+}
+
+/* Active State */
+.link-primary :active {
+  @apply text-primary-dark;
+}

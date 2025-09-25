@@ -42,7 +42,7 @@ const Footer = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center  text-white hover:text-error-700"
+                  className="flex items-center  text-white hover:text-error"
                 >
                   <IconOrImage className="w-4 h-4" />
                 </a>

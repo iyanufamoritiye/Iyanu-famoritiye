@@ -1,4 +1,4 @@
-import { LanguagesType, ProjectType } from '@/types/types';
+import { Company, LanguagesType, ProjectType } from '@/types/types';
 import {
   Github,
   Linkedin,
@@ -162,5 +162,30 @@ export const Links = [
   { name: 'about', link: '/about' },
   { name: 'works', link: '/works' },
   { name: 'contact', link: '/contact' },
-  { name: 'certifications', link: '/certifications' },
 ];
+
+export const companies: Company[] = [
+  {
+    name: 'Tony Elumelu Foundation',
+    icon: '/assets/TEF.png',
+    position: 'Entrepreneurship Program Beneficiary',
+  },
+  {
+    name: 'H-DINTERIEUR',
+    light: true,
+    position: 'Founder & Frontend Developer',
+  },
+  {
+    name: 'KodeCamp',
+    light: true,
+    icon: '/assets/kodecamp.png',
+    position: 'Intermediate Frontend Developer (React)',
+  },
+  {
+    name: 'KodeHauz',
+    light: true,
+    icon: '/assets/kodeHauz.png',
+    position: 'Mid Frontend Developer Intern',
+  },
+];
+

@@ -37,7 +37,7 @@ const CustomButton = ({
     primaryNav: `bg-primary-light text-white hover:bg-primary active:bg-primary-light focus: outline-none ${
       disabled ? 'opacity-50 cursor-not-allowed' : ''
     }`,
-    secondary: `bg-white ring-2 ring-secondary-light text-secondary-light focus:outline-none hover:bg-secondary-800 active:bg-secondary-light ${
+    secondary: `bg-white ring-2 ring-secondary-light text-secondary-light focus:outline-none hover:bg-secondary-dark active:bg-secondary-light ${
       disabled
         ? 'bg-secondary opacity-50 text-gray-900 cursor-not-allowed'
         : ''
@@ -46,16 +46,16 @@ const CustomButton = ({
       disabled ? 'bg-gray-400 opacity-50 text-white cursor-not-allowed' : ''
     }`,
 
-    error: `text-white bg-error-light focus: outline-none  hover:bg-inherit hover:ring-1 hover:ring-white  active:bg-error-light ${
+    error: `text-white bg-error focus:outline-none focus:bg-error-dark hover:bg-error-light hover:ring-1 hover:ring-white  active:bg-error-dark ${
       disabled ? 'bg-gray-400 opacity-50 text-white cursor-not-allowed' : ''
     }`,
-    errorNav: `     text-white  bg-error focus: outline-none  hover:bg-error-dark active:bg-error-light ${
-      disabled ? 'bg-gray-400 opacity-50 text-white     cursor-not-allowed' : ''
+    errorNav: `text-white bg-error focus:outline-none  hover:bg-error-dark active:bg-error-light ${
+      disabled ? 'bg-gray-400 opacity-50 text-white cursor-not-allowed' : ''
     }`,
-    text: ` text-white  hover:text-error-light   active:text-error-light focus: outline-none ${
+    text: ` text-white hover:text-error-light  active:text-error-light focus: outline-none ${
       disabled ? 'text-gray-400 opacity-50 cursor-not-allowed' : ''
     }`,
-    white: `bg-white text-gray-50 hover:bg-gray-50 text-gray-800 focus: outline-none active:bg-gray-50 text-gray-800 ${
+    white: `bg-white text-gray-50 hover:bg-gray-50 text-gray-800 focus:outline-none active:bg-gray-50 text-gray-800 ${
       disabled ? 'bg-gray-400 opacity-50  text-gray-400 cursor-not-allowed' : ''
     }`,
     dark: `bg-gray-400 text-white hover:bg-gray-800 focus:outline-none active:bg-gray-900 ${
@@ -72,7 +72,7 @@ const CustomButton = ({
   return (
     <button
       onClick={onClick}
-      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className} cursor-pointer`}
       disabled={disabled}
       type={type}
     >
