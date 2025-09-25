@@ -26,14 +26,14 @@ const Footer = () => {
                 href="mailto:Henry.famoritiye@gmail.com?subject=Hire Me&body=Hello, I'm interested in hiring you for..."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-2 text-error-600 text-sm  md:text-base"
+                className="ml-2 text-error text-sm  md:text-base"
               >
                 Iyanu Famoritie
               </a>
               . All rights reserved.
             </p>
           </div>
-          <div className="flex  gap-2 ">
+          <div className="flex gap-2 ">
             {socialMediaLinks.map((social, index) => {
               const IconOrImage = social.icon;
               return (
@@ -44,7 +44,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="flex items-center  text-white hover:text-error-700"
                 >
-                  <IconOrImage className="      w-4  h-4  " />
+                  <IconOrImage className="w-4 h-4" />
                 </a>
               );
             })}
@@ -57,14 +57,14 @@ const Footer = () => {
               href="https://www.linkedin.com/in/henryfamoritiye/"
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-2 text-secondary-700 font-semibold text-sm  md:text-base capitalize "
+              className="mx-2 text-secondary font-semibold text-sm  md:text-base capitalize "
             >
               I f
             </a>
             Inspired by
             <a
               href="https://preview.themeforest.net/item/bentos-personal-portfolio-react-template/full_screen_preview/53917243?_ga=2.150210814.934736169.1724331990-616607837.1724331990&_gac=1.250074612.1724331990.Cj0KCQjww5u2BhDeARIsALBuLnPZNtxV9kCaZ5RXhPwgUOA0Vf7rWW0HKHW99MwiZyopnsjX5GMuOt8aAu0bEALw_wcB"
-              className="ml-2 font-semibold text-primary-600"
+              className="ml-2 font-semibold text-primary-light"
               target="_blank"
               rel="noopener noreferrer"
             >

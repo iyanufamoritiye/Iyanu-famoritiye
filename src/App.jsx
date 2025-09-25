@@ -4,6 +4,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import Works from "./Pages/Works";
+import Certifications from './Pages/Certifications';
 import Layout from "./components/Layout";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/certifications" element={<Certifications />} />
       </Route>
     </Routes>
   );

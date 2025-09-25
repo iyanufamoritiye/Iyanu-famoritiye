@@ -1,9 +1,9 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@200..800&display=swap');
 @import "./components/InputComponent/styleinput.css";
 @import "./components/button/stylebutton.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @keyframes marquee {
   0% {
@@ -28,3 +28,84 @@
 .animate-marquee {
   animation: marquee 15s linear infinite;
 }
+
+:root {
+  --color-app-bg: #ffffff;
+  --color-app-text: #111111;
+  --color-app-primary: #3B82F6;
+
+  --color-primary-light: #f9e9c7;
+  --color-primary: #f2c354;
+  --color-primary-dark: #b68f1c;
+
+  --color-secondary-light: #b5b4b5;
+  --color-secondary: #5f5e5f;
+  --color-secondary-dark: #2e2e2e;
+
+  --color-success-light: #66c463;
+  --color-success: #0b8600;
+  --color-success-dark: #065200;
+
+  --color-warning-light: #ffd166;
+  --color-warning: #ffa000;
+  --color-warning-dark: #996200;
+
+  --color-error-light: #f28c8c;
+  --color-error: #c40000;
+  --color-error-dark: #7a0000;
+
+  --color-info-light: #6ec6f0;
+  --color-info: #0288d1;
+  --color-info-dark: #015082;
+  --font-app-font:  'Lato';
+}
+
+[data-theme="dark"] {
+  --color-app-bg: #000000;
+  --color-app-text: #ffffff;
+  --color-app-primary: #60A5FA;
+}
+
+[data-theme="primary"] {
+  --color-app-bg: #3B82F6;
+  --color-app-text: #ffffff;
+  --color-app-primary: #1D4ED8;
+}
+
+@theme inline {
+  --color-app-bg:  var(--color-app-primary) ;
+  --color-app-text:  var(--color-app-primary) ;
+  --color-app-primary:  var(--color-app-primary) ;
+
+  --color-grey: var(--color-grey);
+  --color-grey-dark: var(--color-grey-dark);
+  --color-main-light: var(--color-main-light);
+
+  /* Semantic colors */
+  --color-primary-light: var(--color-primary-light);
+  --color-primary: var(--color-primary);
+  --color-primary-dark: var(--color-primary-dark);
+
+  --color-secondary-light: var(--color-secondary-light);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-dark: var(--color-secondary-dark);
+
+  --color-success-light: var(--color-success-light);
+  --color-success: var(--color-success);
+  --color-success-dark: var(--color-success-dark);
+
+  --color-warning-light: var(--color-warning-light);
+  --color-warning: var(--color-warning);
+  --color-warning-dark: var(--color-warning-dark);
+
+  --color-error-light: var(--color-error-light);
+  --color-error: var(--color-error);
+  --color-error-dark: var(--color-error-dark);
+
+  --color-info-light: var(--color-info-light);
+  --color-info: var(--color-info);
+  --color-info-dark: var(--color-info-dark);
+
+  --font-app-font: var(--font-app-font);
+}
+

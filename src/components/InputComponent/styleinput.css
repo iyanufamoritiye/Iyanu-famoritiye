@@ -3,9 +3,9 @@
   /* Default State */
   .styled-input {
     @apply transition-all duration-300  
-     ease-linear placeholder:text-gray-scale-500   inline-block  
-       font-lato  text-gray-scale-900 
-      bg-gray-scale-50;
+     ease-linear placeholder:text-gray-500   inline-block  
+       font-app-font  text-gray-900 
+      bg-gray-50;
   }
 
   /* Hover State */
@@ -16,39 +16,39 @@
 
   /* Focused State */
   .styled-input:focus {
-    @apply outline-none   placeholder:text-gray-scale-200;
+    @apply outline-none   placeholder:text-gray-200;
   }
 
   /* Active State (when user is clicking) */
   .styled-input:active {
-    @apply text-gray-scale-900;
+    @apply text-gray-900;
   }
   .styled-input:disabled {
-    @apply bg-gray-scale-200 text-gray-scale-400 border-gray-scale-200 cursor-not-allowed;
+    @apply bg-gray-200 text-gray-400 border-gray-200 cursor-not-allowed;
   }
 
   /* Entered State (when user has typed something) */
   .styled-inputzvalid {
-    @apply ring-1 ring-primary-400 font-lato  text-primary-400;
+    @apply ring-1 ring-primary-400 --font-app-font  text-primary-400;
   }
 
   /* Invalid State */
   .styled-input-invalid {
-    @apply text-error-500 font-lato ring-1 ring-error-500;
+    @apply text-error-500 --font-app-font ring-1 ring-error-500;
   }
 
   /* Error Message */
   .error-message {
-    @apply font-lato  text-xs  text-error-500;
+    @apply font-app-font  text-xs  text-error-500;
   }
 
   /* Label Default */
   .input-label {
-    @apply text-gray-scale-900 font-lato;
+    @apply text-gray-900 --font-app-font;
   }
 
   .input-label-valid {
-    @apply text-primary-400 font-lato;
+    @apply text-primary-400 --font-app-font;
   }
   /*  sizing funtion  */
   .size-small {

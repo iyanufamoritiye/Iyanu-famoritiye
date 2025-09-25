@@ -8,7 +8,7 @@ const GitIcon = () => {
       stroke="#036DC4"
       data-prefix="fab"
       data-icon="git"
-      className="svg-inline--fa fa-git text-base text-primary-500 hover:transform-gpu hover:scale-105 hover:translate-y-2 hover:transition-all hover:duration-1000 hover:ease-linear transition-all duration-1000 ease-linear border border-gray-scale-300 rounded-[50%] p-2"
+      className="svg-inline--fa fa-git text-base text-primary-light hover:transform-gpu hover:scale-105 hover:translate-y-2 hover:transition-all hover:duration-1000 hover:ease-linear transition-all duration-1000 ease-linear border border-gray-scale-300 rounded-[50%] p-2"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"

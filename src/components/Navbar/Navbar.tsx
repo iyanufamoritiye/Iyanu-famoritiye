@@ -1,26 +1,32 @@
-import React, { useEffect, useState } from "react";
-import "./Navbar.css";
-import { Link, NavLink } from "react-router-dom";
-import {
-  Facebook,
-  Github,
-  Instagram,
-  Linkedin,
-  Menu,
-  Twitter,
-} from "lucide-react";
-import CustomButton from "../button/CustomButton";
-import image3 from "/assets/image3.svg";
+import React, { useEffect, useState } from 'react';
+import './Navbar.css';
+import { Link, NavLink } from 'react-router-dom';
+import { Menu } from 'lucide-react';
+import CustomButton from '../button/CustomButton';
+import image3 from '/assets/image3.svg';
+import { socialMediaLinks, Links } from '../../data/data';
+import { Sun, Moon, Zap } from 'lucide-react'; // Theme icons
+
+const themes = ['light', 'dark', 'primary'] as const;
+const icons = {
+  light: <Sun size={20} />,
+  dark: <Moon size={20} />,
+  primary: <Zap size={20} />,
+};
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const Links = [
-    { name: "home", link: "/" },
-    { name: "about", link: "/about" },
-    { name: "works", link: "/works" },
-    { name: "contact", link: "/contact" },
-  ];
+  const [currentTheme, setCurrentTheme] = React.useState<
+    'light' | 'dark' | 'primary'
+  >('light');
+
+  const handleThemeSwitch = () => {
+    const currentIndex = themes.indexOf(currentTheme);
+    const nextTheme = themes[(currentIndex + 1) % themes.length];
+    setCurrentTheme(nextTheme);
+    document.documentElement.setAttribute('data-theme', nextTheme);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,9 +37,9 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -44,40 +50,27 @@ const Navbar = () => {
   const handleClick = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   const handleClickMobile = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
     setOpen(false);
   };
 
-  const socialMediaLinks = [
-    {
-      url: " https://www.linkedin.com/in/henryfamoritiye/",
-      icon: Linkedin,
-      alt: "Linkedin",
-    },
-    {
-      url: " https://github.com/iyanufamoritiye",
-      icon: Github,
-      alt: "Github",
-    },
-  ];
-
   return (
-    <div className="flex flex-col  sticky top-0 z-10   justify-between  w-full       ">
-      <div className=" hidden md:flex justify-between  bg-primary-800   items-center  py-2 px-4 ">
+    <div className="flex flex-col sticky top-0 z-10 justify-between w-full">
+      <div className=" hidden md:flex justify-between bg-primary-800 items-center py-2 px-4 ">
         <div className="flex gap-4">
-          <img src={image3} alt="" className="   stroke-2  size-8     " />
+          <img src={image3} alt="" className="stroke-2  size-8" />
           <h1 className=" text-xl font-bold text-white ">Iyanu</h1>
         </div>
 
-        <div className="border-2  border-secondary-700 animate-pulse  p-1 rounded-md h-fit">
+        <div className="border-2 border-secondary-700 animate-pulse p-1 rounded-md h-fit">
           <a
             href="https://www.linkedin.com/in/henryfamoritiye/"
             target="_blank"
@@ -118,9 +111,8 @@ const Navbar = () => {
 
         <div id="navLink" className="flex md:space-x-2 xl:space-x-6 capitalize">
           {Links.map((link, index) => (
-            <div id="border" className="    ">
+            <div key={index} id="border" className="    ">
               <NavLink
-                key={index}
                 to={link.link}
                 className="text-base p-2 font-semibold text-white  transition duration-300"
                 onClick={handleClick}
@@ -150,7 +142,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className=" block md:hidden p-4 px-3   items-center justify-between  bg-primary-900/90  to-transparent     
+        className=" block md:hidden p-4 px-3 items-center justify-between  bg-primary-900/90  to-transparent     
           w-full  z-50  h-fit  sticky top-0 mb-6  "
       >
         <div className="flex justify-between px-4">
@@ -188,6 +180,14 @@ const Navbar = () => {
                 </div>
               ))}
             </div>
+
+            <button
+              onClick={handleThemeSwitch}
+              className="p-2 bg-app-bg rounded-full hover:bg-gray-200"
+            >
+              {icons[currentTheme]}
+            </button>
+
             <div className="flex justify-between gap-4">
               <div className="border-2  border-secondary-700 animate-pulse  p-1 rounded-md h-fit">
                 <a
@@ -206,7 +206,7 @@ const Navbar = () => {
                 </a>
               </div>
 
-              <div className="border-2  w-fit   border-error-700 animate-pulse transition duration-300 p-1   rounded-md h-fit">
+              <div className="border-2 w-fit border-error-700 animate-pulse transition duration-300 p-1   rounded-md h-fit">
                 <a
                   href="mailto:Henry.famoritiye@gmail.com?subject=Hire Me&body=Hello, I'm interested in hiring you for..."
                   target="_blank"
@@ -217,7 +217,7 @@ const Navbar = () => {
                     type="submit"
                     variant="errorNav"
                     size="md"
-                    className=" px-5 rounded-md w-fit    animate-pulse"
+                    className=" px-5 rounded-md w-fit animate-pulse"
                   >
                     Hire Me
                   </CustomButton>

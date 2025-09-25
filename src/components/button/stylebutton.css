@@ -5,115 +5,115 @@
   /* button-primary */
   /* Default State primary,*/
   .button-primary {
-    @apply text-white bg-gray-scale-400 font-lato 
+    @apply text-white bg-gray-400 font-app-font 
        inline-block    transition-all duration-300 ease-linear;
     /*   please  specify width sizes */
   }
 
   /* Hover State */
   .button-primary:hover {
-    @apply bg-primary-700 text-white;
+    @apply bg-primary text-white;
   }
 
   /* Active State */
   .button-primary:active {
-    @apply bg-primary-500  text-white;
+    @apply bg-primary-light  text-white;
   }
 
   /* Disabled State */
   .button-primary-disabled {
-    @apply bg-primary-400 opacity-50 text-gray-scale-50 cursor-not-allowed pointer-events-none input-label;
+    @apply bg-primary-light opacity-50 text-gray-50 cursor-not-allowed pointer-events-none input-label;
   }
 
   /* Secondary */
 
   /* Default State */
   .button-Secondary {
-    @apply text-secondary-500 bg-white -inset-1 border border-secondary-500 font-lato  
+    @apply text-secondary-light bg-white -inset-1 border border-secondary-light font-app-font  
         inline-block    transition-all duration-300 ease-linear;
     /*   please  specify width sizes */
   }
 
   /* Hover State */
   .button-Secondary:hover {
-    @apply bg-secondary-800  border-secondary-800 text-white;
+    @apply bg-secondary-dark  border-secondary-dark text-white;
   }
 
   /* Active State */
   .button-Secondary:active {
-    @apply bg-secondary-500  border-secondary-500 text-white;
+    @apply bg-secondary-light  border-secondary-light text-white;
   }
 
   /* Disabled State */
   .button-Secondary-disabled {
-    @apply bg-secondary-700 opacity-50 text-gray-scale-900 cursor-not-allowed pointer-events-none;
+    @apply bg-secondary opacity-50 text-gray-900 cursor-not-allowed pointer-events-none;
   }
 
   /* text */
 
   /* Default State */
   .button-text {
-    @apply text-gray-scale-400  bg-white  font-lato  
+    @apply text-gray-400  bg-white  font-app-font  
      inline-block     transition-all duration-300 ease-linear;
     /*   please  specify width sizes */
   }
 
   /* Hover State */
   .button-text:hover {
-    @apply text-secondary-800;
+    @apply text-secondary-dark;
   }
 
   /* Active State */
   .button-text:active {
-    @apply text-secondary-800;
+    @apply text-secondary-light;
   }
 
   /* Disabled State */
   .button-text:disabled {
-    @apply opacity-50 text-gray-scale-400 cursor-not-allowed pointer-events-none;
+    @apply opacity-50 text-gray-400 cursor-not-allowed pointer-events-none;
   }
 
   /* white*/
 
   /* Default State */
   .button-white {
-    @apply text-gray-scale-50 border border-gray-scale-50  bg-white font-lato 
+    @apply text-gray-50 border border-gray-50  bg-white font-app-font 
     inline-block  transition-all duration-300 ease-linear;
     /*   please  specify width sizes */
   }
 
   /* Hover State */
   .buttonS-white:hover {
-    @apply text-gray-scale-800   bg-gray-scale-50;
+    @apply text-gray-800   bg-gray-50;
   }
 
   /* Active State */
   .button-white:active {
-    @apply text-gray-scale-800   bg-gray-scale-50;
+    @apply text-gray-800   bg-gray-50;
   }
 
   /* Disabled State */
   .button-white-disabled {
-    @apply opacity-50 text-gray-scale-900 bg-gray-scale-400 cursor-not-allowed pointer-events-none;
+    @apply opacity-50 text-gray-900 bg-gray-400 cursor-not-allowed pointer-events-none;
   }
 
   /* dark*/
 
   /* Default State */
   .button-dark {
-    @apply text-white   bg-gray-scale-400  font-lato  
+    @apply text-white   bg-gray-400  font-app-font  
      inline-block  transition-all duration-300 ease-linear;
     /*   please  specify width sizes */
   }
 
   /* Hover State */
   .button-dark:hover {
-    @apply bg-gray-scale-900;
+    @apply bg-gray-900;
   }
 
   /* Active State */
   .button-dark:active {
-    @apply bg-gray-scale-800;
+    @apply bg-gray-800;
   }
 
   /* Disabled State */
@@ -126,41 +126,41 @@
   /* primary button for navigation */
 
   .button-primary-nav {
-    @apply text-white bg-primary-500 font-lato 
+    @apply text-white bg-primary font-app-font 
        inline-block    transition-all duration-300 ease-linear;
     /*   please  specify width sizes */
   }
 
   /* Hover State */
   .button-primary-nav:hover {
-    @apply bg-primary-700 text-white;
+    @apply bg-primary-light text-white;
   }
 
   /* Active State */
   .buttonS-primary-nav:active {
-    @apply bg-primary-500  text-white;
+    @apply bg-primary-dark  text-white;
   }
 
   /* Disabled State */
   .buttonS-primary-nav-disabled {
-    @apply bg-primary-400 opacity-50 text-gray-scale-50 cursor-not-allowed pointer-events-none;
+    @apply bg-primary opacity-50 text-gray-50 cursor-not-allowed pointer-events-none;
   }
 
   /* links  */
 
   .link-primary {
-    @apply text-primary-500 font-lato  
+    @apply text-primary font-app-font  
        inline-block    transition-all duration-300 ease-linear;
     /*   please  specify width sizes */
   }
 
   /* Hover State */
   .link-primary:hover {
-    @apply text-primary-700;
+    @apply text-primary-light;
   }
 
   /* Active State */
   .link-primary :active {
-    @apply text-primary-500;
+    @apply text-primary-dark;
   }
 }

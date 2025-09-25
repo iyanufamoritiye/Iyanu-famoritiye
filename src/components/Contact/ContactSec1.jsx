@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CustomButton from "../button/CustomButton";
-import { ArrowDownToLine, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import emailjs from "emailjs-com";
 
 const ContactSec1 = () => {
@@ -36,7 +36,7 @@ const ContactSec1 = () => {
 
   return (
     <div>
-      <div className="lex flex-col  justify-center items-center    bg-primary-800  p-3 md:p-6 xl:p-12  py-8 rounded-3xl">
+      <div className="lex flex-col  justify-center items-center    bg-primary-dark  p-3 md:p-6 xl:p-12  py-8 rounded-3xl">
         <div className="mb-12">
           <h3 className="text-center text-base font-normal text-gray-400  mb-8">
             Contact
@@ -52,7 +52,7 @@ const ContactSec1 = () => {
            border-gray-500 p-8 rounded-3xl mb-6 md:mb-0"
           >
             <div className="flex flex-col   items-start mb-4">
-              <Phone className="text-error-500 size-8 mb-3 " />
+              <Phone className="text-error-light size-8 mb-3 " />
               <span className="font-semibold text-white text-lg">
                 Contact number:
               </span>
@@ -67,22 +67,22 @@ const ContactSec1 = () => {
             </div>
 
             <div className="flex flex-col items-start mb-4">
-              <Mail className="text-error-500 size-8 mb-3  " />
+              <Mail className="text-error-light size-8 mb-3  " />
               <span className="font-semibold text-white text-lg">
                 Email us:
               </span>
               <a
-                href="mailto:Henry.famoritiye@gmail.com?subject=Hire Me&body=Hello, I'm interested in hiring you for..."
+                href={`mailto:${process.env.MY_EMAIL}?subject=Hire Me&body=Hello, I'm interested in hiring you for...`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="   text-gray-400 text-lg font-medium     "
               >
-                info@example.com
+                Henry.famoritiye@gmail.com
               </a>
             </div>
 
             <div className="flex flex-col items-start">
-              <MapPin className="text-error-500  size-8 mb-3 " />
+              <MapPin className="text-error-light  size-8 mb-3 " />
               <span className="font-semibold text-white text-lg  ">
                 Our office:
               </span>
@@ -106,11 +106,11 @@ const ContactSec1 = () => {
               onSubmit={sendEmail}
               className="flex flex-col  gap-4 md:gap-12 "
             >
-              <div className=" xl:flex   w-full justify-between items-center mb">
+              <div className=" xl:flex  w-full justify-between items-center mb">
                 <div className=" w-full xl:w-[47%] flex flex-col md:gap-4 gap-2 mb-6 xl:mb-0 mt-2 md:mt-0  ">
                   <label
                     htmlFor="name"
-                    className="text-gray-300 font-semibold text-base xl:text-xl font-lato"
+                    className="text-gray-300 font-semibold text-base xl:text-xl"
                   >
                     Full Name
                   </label>
@@ -126,7 +126,7 @@ const ContactSec1 = () => {
                 <div className=" w-full xl:w-[47%] flex flex-col  md:gap-4 gap-2 mb-6 md:mb-0">
                   <label
                     htmlFor="Email Address"
-                    className="text-gray-300 font-semibold text-base xl:text-xl  font-lato"
+                    className="text-gray-300 font-semibold text-base xl:text-xl "
                   >
                     Email Address
                   </label>
@@ -143,7 +143,7 @@ const ContactSec1 = () => {
               <div className="h-48 w-full mb-12 ">
                 <label
                   htmlFor="Your Message"
-                  className="text-gray-300 font-semibold text-base md:text-xl font-lato"
+                  className="text-gray-300 font-semibold text-base md:text-xl"
                 >
                   Your Message
                 </label>
@@ -153,7 +153,7 @@ const ContactSec1 = () => {
                   onChange={handleChange}
                   required
                   placeholder="Your Message"
-                  className="border-2 border-gray-50 h-full  rounded-2xl py-2 px-4  md:p-4 w-full focus:outline-none mb-4 mt-2  md:mt-4"
+                  className="border-2 border-gray-50 h-full rounded-2xl py-2 px-4  md:p-4 w-full focus:outline-none mb-4 mt-2  md:mt-4"
                 ></textarea>
               </div>
               <div className="h-fit mb-4 md:mb-0">
@@ -161,10 +161,10 @@ const ContactSec1 = () => {
                   type="submit"
                   variant="error"
                   size="lg"
-                  className="flex gap-4  px-5 rounded-2xl  "
+                  className="flex gap-4 px-5 rounded-2xl"
                 >
                   Send Me a Message
-                  <Mail className="size-5 stroke-2    " />
+                  <Mail className="size-5 stroke-2" />
                 </CustomButton>
               </div>
             </form>
