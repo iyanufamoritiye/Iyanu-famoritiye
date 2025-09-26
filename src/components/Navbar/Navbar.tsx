@@ -61,7 +61,7 @@ const Navbar = () => {
     <div className="flex flex-col  sticky top-0 z-10 justify-between w-full">
       <div className=" hidden md:flex justify-between bg-app-bg items-center py-2 px-4 ">
         <div className="flex gap-4 text-app-text">
-          <img src={image3} alt="" className="stroke-2  size-8" />
+          <img src={image3} alt="text icon" className="stroke-2  size-8" />
           <h1 className=" text-xl font-bold">Iyanu</h1>
         </div>
 
@@ -84,10 +84,10 @@ const Navbar = () => {
       </div>
 
       <div
-        className="md:flex py-4 sticky top-0 hidden items-center justify-between bg-app-bg-main/90  w-full
+        className="md:flex py-4 sticky top-0 hidden items-center justify-between bg-app-bg-main  w-full
           md:px-6 xl:px-20 "
       >
-        <div className="flex md:space-x-4 xl:space-x-6 mt-1 ">
+        <div className="flex md:space-x-4 lg:space-x-6 mt-1 ">
           {socialMediaLinks.map((social, index) => {
             const IconOrImage = social.icon;
             return (
@@ -106,7 +106,7 @@ const Navbar = () => {
 
         <div id="navLink" className="flex md:space-x-2 xl:space-x-6 capitalize">
           {Links.map((link, index) => (
-            <div key={index} id="border" className="    ">
+            <div key={index} id="border">
               <NavLink
                 to={link.link}
                 className="text-base p-2 font-semibold text-app-text  transition duration-300"
@@ -149,22 +149,16 @@ const Navbar = () => {
       </div>
 
       <div
-        className=" block md:hidden p-4 px-3 items-center justify-between  bg-app-bg/10  to-transparent     
+        className=" block md:hidden p-4 px-3 items-center justify-between bg-app-bg/90  to-transparent     
           w-full z-50 h-fit sticky top-0 mb-6  "
       >
         <div className="flex justify-between px-4">
           <div className="flex gap-4 z-30">
-            <img
-              src={image3}
-              alt="soft engineer"
-              className=" size-10 stroke-4  "
-            />
             <h1 className=" text-2xl text-app-text font-bold">Iyanu</h1>
           </div>
-
           <button
             onClick={toggleTheme}
-            className={`p-2 rounded-full 
+            className={`flex items-center justify-center rounded-full transition-colors size-8
             ${
               theme === 'light'
                 ? 'bg-transparent text-app-text hover:bg-gray-100'
@@ -172,7 +166,7 @@ const Navbar = () => {
             }
           `}
           >
-            {icons[theme]}
+            <div className="size-5">{icons[theme]}</div>
           </button>
           <div
             className="bg-app-bg-main shadow cursor-pointer  z-30 transition-all duration-500 ease-in-out p-2 rounded-md"

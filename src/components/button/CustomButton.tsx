@@ -52,7 +52,7 @@ const CustomButton = ({
     errorNav: `text-white bg-error focus:outline-none  hover:bg-error-dark active:bg-error-light ${
       disabled ? 'bg-gray-400 opacity-50 text-white cursor-not-allowed' : ''
     }`,
-    text: ` text-white hover:text-error-light  active:text-error-light focus: outline-none ${
+    text: `text-app-text  hover:text-app-text-dark  active:text-app-text-dark focus:outline-none ${
       disabled ? 'text-gray-400 opacity-50 cursor-not-allowed' : ''
     }`,
     white: `bg-white text-gray-50 hover:bg-gray-50 text-gray-800 focus:outline-none active:bg-gray-50 text-gray-800 ${

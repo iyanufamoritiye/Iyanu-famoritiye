@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className="flex flex-col bg-white w-[350px] md:w-[400px] h-[500px] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+    <div className="flex flex-col bg-white w-full  max-w-[400px] h-[500px] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
       {/* Image on top */}
       <div className="w-full p-4 rounded-2xl h-[250px] bg-gray-100 flex-shrink-0">
         <img

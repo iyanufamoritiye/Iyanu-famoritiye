@@ -54,8 +54,8 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
       computed.getPropertyValue('--color-app-text')
     );
     html.style.setProperty(
-      '--inline-app-text-light',
-      computed.getPropertyValue('--color-app-text-light')
+      '--inline-app-nav-active',
+      computed.getPropertyValue('--color-app-nav-active')
     );
     html.style.setProperty(
       '--inline-app-text-dark',

@@ -36,9 +36,9 @@ const ContactSec1 = () => {
 
   return (
     <div>
-      <div className="lex flex-col  justify-center items-center bg-app-bg-main  p-3 md:p-6 xl:p-12  py-8 rounded-3xl">
+      <div className="flex flex-col  justify-center items-center bg-app-bg-main  p-3 md:p-6 xl:p-12  py-8 rounded-3xl">
         <div className="mb-12">
-          <h3 className="text-center text-base font-normal text-app-text-dark mb-8">
+          <h3 className="text-center text-base font-normal text-app-text mb-8">
             Contact
           </h3>
           <h1 className="text-app-text text-center text-2xl md:text-4xl  xl:text-6xl font-bold ">
@@ -46,13 +46,13 @@ const ContactSec1 = () => {
           </h1>
         </div>
 
-        <div className="w-full flex flex-col  md:flex-row justify-between md:p-8">
+        <div className="w-full flex flex-col lg:flex-row justify-between lg:p-8">
           <div
-            className=" w-full md:w-[35%] h-auto border py-12 md:py-24 flex flex-col justify-between
-           border-app-text-dark p-8 rounded-3xl mb-6 md:mb-0"
+            className=" w-full lg:w-[35%] h-auto border py-12 bg-app-bg md:py-24 flex flex-col justify-between
+           border-app-text-dark p-8 rounded-3xl mb-6 lg:mb-0"
           >
             <div className="flex flex-col   items-start mb-4">
-              <Phone className="text-error-light size-8 mb-3 " />
+              <Phone className="text-error size-8 mb-3 " />
               <span className="font-semibold text-app-text text-lg">
                 Contact number:
               </span>
@@ -67,7 +67,7 @@ const ContactSec1 = () => {
             </div>
 
             <div className="flex flex-col items-start mb-4">
-              <Mail className="text-error-light size-8 mb-3  " />
+              <Mail className="text-error size-8 mb-3  " />
               <span className="font-semibold text-app-text text-lg">
                 Email us:
               </span>
@@ -82,7 +82,7 @@ const ContactSec1 = () => {
             </div>
 
             <div className="flex flex-col items-start">
-              <MapPin className="text-error-light  size-8 mb-3 " />
+              <MapPin className="text-error  size-8 mb-3 " />
               <span className="font-semibold text-app-text text-lg  ">
                 Our office:
               </span>
@@ -90,7 +90,7 @@ const ContactSec1 = () => {
                 href="https://maps.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="   text-gray-400 text-lg  font-medium    "
+                className="   text-app-text-dark text-lg  font-medium    "
               >
                 Lagos, Nigeria
               </a>
@@ -98,7 +98,7 @@ const ContactSec1 = () => {
           </div>
 
           <div
-            className="w-full md:w-[60%] flex flex-col gap-12 border rounded-3xl border-app-text-dark p-4
+            className="w-full lg:w-[60%] bg-app-bg flex flex-col gap-12 border rounded-3xl border-app-text-dark p-4
             md:p-8 xl:p-12"
           >
             <form
@@ -106,7 +106,7 @@ const ContactSec1 = () => {
               onSubmit={sendEmail}
               className="flex flex-col  gap-4 md:gap-12 "
             >
-              <div className=" xl:flex  w-full justify-between items-center mb">
+              <div className=" xl:flex w-full justify-between items-center mb">
                 <div className=" w-full xl:w-[47%] flex flex-col md:gap-4 gap-2 mb-6 xl:mb-0 mt-2 md:mt-0  ">
                   <label
                     htmlFor="name"
@@ -120,7 +120,7 @@ const ContactSec1 = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="border-2 border-app-text-dark text-app-text w-full py-2 px-4  xl:p-4 rounded-2xl   focus:outline-none"
+                    className="border-2 border-app-text-dark bg-white focus:bg-white text-gray-900 w-full py-2 px-4  xl:p-4 rounded-2xl   focus:outline-none"
                   />
                 </div>
                 <div className=" w-full xl:w-[47%] flex flex-col  md:gap-4 gap-2 mb-6 md:mb-0">
@@ -136,7 +136,7 @@ const ContactSec1 = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="border-2 border-app-text-dark text-app-text w-full py-2 px-4  xl:p-4 rounded-2xl  focus:outline-none  "
+                    className="border-2 border-app-text-dark bg-white focus:bg-white text-gray-900 w-full py-2 px-4  xl:p-4 rounded-2xl  focus:outline-none  "
                   />
                 </div>
               </div>
@@ -153,7 +153,7 @@ const ContactSec1 = () => {
                   onChange={handleChange}
                   required
                   placeholder="Your Message"
-                  className="border-2 border-app-text-dark text-app-text h-full rounded-2xl py-2 px-4  md:p-4 w-full focus:outline-none mb-4 mt-2  md:mt-4"
+                  className="border-2 border-app-text-dark focus:bg-white bg-white text-gray-900 h-full rounded-2xl py-2 px-4  md:p-4 w-full focus:outline-none mb-4 mt-2  md:mt-4"
                 ></textarea>
               </div>
               <div className="h-fit mb-4 md:mb-0">

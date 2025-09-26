@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="text-gray-400  flex flex-col items-center justify-center gap-2 xl:gap-0  xl:justify-between xl:flex-row px-6  py-12 xl:p-16">
+      <div className="text-app-text  flex flex-col items-center justify-center gap-2 xl:gap-0  xl:justify-between xl:flex-row px-6  py-12 xl:p-16">
         <div className="flex justify-between items-center  gap-4">
           <div>
             <p className=" text-sm text-center  md:text-base">
@@ -57,14 +57,14 @@ const Footer = () => {
               href="https://www.linkedin.com/in/henryfamoritiye/"
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-2 text-secondary font-semibold text-sm  md:text-base capitalize "
+              className="mx-2 text-app-bg-main font-semibold text-sm md:text-base capitalize "
             >
               I f
             </a>
             Inspired by
             <a
               href="https://preview.themeforest.net/item/bentos-personal-portfolio-react-template/full_screen_preview/53917243?_ga=2.150210814.934736169.1724331990-616607837.1724331990&_gac=1.250074612.1724331990.Cj0KCQjww5u2BhDeARIsALBuLnPZNtxV9kCaZ5RXhPwgUOA0Vf7rWW0HKHW99MwiZyopnsjX5GMuOt8aAu0bEALw_wcB"
-              className="ml-2 font-semibold text-primary-light"
+              className="ml-2 font-semibold text-error"
               target="_blank"
               rel="noopener noreferrer"
             >

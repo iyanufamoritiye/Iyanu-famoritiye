@@ -29,7 +29,7 @@
   --color-app-bg: #061C3D;
   --color-app-bg-main: #062844;
   --color-app-text: #E5E7EB;
-  --color-app-text-light: #FFFFFF;
+  --color-app-nav-active: #F2C94C;
   --color-app-text-dark: #99A1AF;
 }
 
@@ -37,7 +37,7 @@
   --color-app-bg: #0F172A;
   --color-app-bg-main: #1E293B;
   --color-app-text: #F8FAFC;
-  --color-app-text-light: #E2E8F0;
+  --color-app-nav-active: #F2C94C;
   --color-app-text-dark: #94A3B8;
 }
 
@@ -45,32 +45,32 @@
   --color-app-bg: #F9FAFB;
   --color-app-bg-main: #E5E7EB;
   --color-app-text: #111827;
-  --color-app-text-light: #2563EB;
+  --color-app-nav-active: #c40000;
   --color-app-text-dark: #374151;
 }
 
 .secondary {
-  --color-app-bg: #BC6C25;        /* rustic orange */
-  --color-app-bg-main: #DDA15E;   /* warm tan */
-  --color-app-text: #1E293B;      
-  --color-app-text-light: #F2C94C; /* golden highlight */
-  --color-app-text-dark: #475569; 
+  --color-app-bg: #FAEFD4;
+  --color-app-bg-main: #FAE6B1;
+  --color-app-text: #1E293B;
+  --color-app-nav-active: #c40000;
+  --color-app-text-dark: #475569;
 }
 
 .success {
-  --color-app-bg: #3A5A40;        /* earthy army green */
-  --color-app-bg-main: #A3B18A;   /* sage green */
-  --color-app-text: #FEFAE0;      /* cream */
-  --color-app-text-light: #DDE5B6;/* pale olive */
-  --color-app-text-dark: #283618; /* dark olive */
+  --color-app-bg:#A3B18A;
+  --color-app-bg-main: #2C5333;
+  --color-app-text: #FEFAE0;
+  --color-app-nav-active: #F2C94C;
+  --color-app-text-dark: #283618;
 }
 
 .info {
-  --color-app-bg: #E0F2FE;        /* sky blue */
-  --color-app-bg-main: #93C5FD;   /* medium pastel blue */
-  --color-app-text: #0F172A;      /* dark navy */
-  --color-app-text-light: #38BDF8;/* cyan accent */
-  --color-app-text-dark: #1E40AF; /* royal navy */
+  --color-app-bg: #E0F2FE;
+  --color-app-bg-main: #93C5FD;
+  --color-app-text: #0F172A;    
+  --color-app-nav-active: #ffffff;
+  --color-app-text-dark: #1E40AF;
 }
 
 
@@ -80,7 +80,7 @@
   --inline-app-bg-main: var(--color-app-bg-main);
 
   --inline-app-text: var(--color-app-text);
-  --inline-app-text-light: var(--color-app-text-light);
+  --inline-app-nav-active: var(--color-app-nav-active);
   --inline-app-text-dark: var(--color-app-text-dark);
   --color-primary-light: #036DC4;
   --color-primary: #062844  ;   
@@ -113,7 +113,7 @@ body {
 
 @theme inline {
   --color-app-text: var(--color-app-text);
-  --color-app-text-light: var(--color-app-text-light);
+  --color-app-nav-active: var(--color-app-nav-active);
   --color-app-text-dark: var(--color-app-text-dark);
 
   /* Background Colors */

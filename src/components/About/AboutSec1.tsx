@@ -60,38 +60,35 @@ const AboutSec1 = () => {
   };
   return (
     <div>
-      <div className="flex text-app-text flex-col md:flex-row gap-4 xl:gap-12 w-full  mb-16  ">
-        <div
-          className="text-app-text text-center flex flex-col justify-center py-14 px-4 items-center 
-         md:py-24 gap-5 bg-app-bg-main rounded-3xl w-full md:w-[40%] h-full mb-6 md:mb-0 "
-        >
-          <div className="rounded-full bg-error-dark w-64 h-72 md:w-60 md:h-64 xl:w-64 xl:h-72  relative">
+      <div className="flex text-app-text flex-col md:flex-row gap-4 lg:gap-12 w-full lg:h-[500px] mb-16  ">
+        <div className="hidden  text-app-text text-center md:flex flex-col justify-center px-4 items-center gap-5 bg-app-bg-main rounded-3xl w-full md:w-[40%] h-[350px] lg:h-full">
+          <div className="rounded-full bg-error-dark w-64 md:w-60 md:h-64 lg:w-64 h-72 relative">
             <img
               src={iyanu}
               alt="iyanu"
-              className=" w-48  md:w-44 xl:w-48 left-8 right-0 rounded-full  absolute -top-20    "
+              className=" w-48  md:w-44 lg:w-48 left-8 right-0 rounded-full  absolute -top-20    "
             />
           </div>
         </div>
 
-        <div className="p-4 w-full md:w-[70%] md:px-8 xl:px-12 py-10  bg-app-bg-main rounded-3xl  mb-12 ">
+        <div className="p-4 w-full md:w-[70%] md:px-8 flex flex-col justify-center lg:px-12 h-full bg-app-bg-main rounded-3xl">
           <h1 className=" text-xl md:text-2xl xl:text-3xl text-app-text font-medium mb-4">
             I am Iyanu Henry Famoritiye, a Front-End Developer
           </h1>
-          <p className="text-base xl:text-xl font-medium mb-4 md:w-[80%] text-app-text xl:w-full  ">
+          <p className="text-base lg:text-lg mb-4 md:w-[80%] text-app-text lg:w-full  ">
             I am a Nigeria-based front-end developer specializing in creating
             engaging and user-friendly web applications. With a strong
             foundation in web development and administration, I have honed my
             skills in building responsive and visually appealing interfaces.
           </p>
 
-          <p className="text-base xl:text-xl font-medium md:w-[80%] text-app-text xl:w-full ">
+          <p className="text-base lg:text-lg md:w-[80%] text-app-text lg:w-full ">
             I hold a degree in Computer Science from Moshood Abiola Polytechnic,
             which has equipped me with essential technical knowledge and
             problem-solving abilities. I am committed to continuous learning and
             staying updated with the latest industry trends and technologies.
           </p>
-          <p className="text-base xl:text-xl font-medium mb-4 md:w-[80%] text-app-text xl:w-full">
+          <p className="text-base lg:text-lg mb-4 md:w-[80%] text-app-text lg:w-full">
             My work adheres to the highest standards of professional ethics,
             ensuring that I deliver quality results while following best
             practices in software development.
@@ -135,7 +132,7 @@ const AboutSec1 = () => {
           Are You Ready to kickstart your project with a touch of magic?
         </h1>
 
-        <p className="text-lg text-center font-semibold text-app-text-dark mb-6 xl:w-3/4">
+        <p className="text-lg text-center font-semibold text-app-text mb-6 xl:w-3/4">
           Reach out and let's make it happen ✨. I'm also available for
           full-time or Part-time opportunities to push the boundaries of
           collaboration and deliver exceptional work.

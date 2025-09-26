@@ -5,11 +5,12 @@ import { useNavigate } from 'react-router-dom';
 import CustomButton from '../button/CustomButton';
 import { projects } from '../../data/data';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+
 const WockSection1 = () => {
   const navigate = useNavigate();
   const handleClick = () => {
@@ -21,7 +22,7 @@ const WockSection1 = () => {
   };
 
   return (
-    <div className='text-app-text'>
+    <div className="text-app-text">
       <div className="flex flex-col justify-center items-center bg-app-bg-main p-4 xl:p-12  pt-8   rounded-3xl mb-24">
         <div className="flex  flex-col items-center mb-8 xl:mb-24">
           <h1 className=" text-2xl text-center  xl:text-4xl font-semibold mb-4 md:mb-6 ">
@@ -36,9 +37,7 @@ const WockSection1 = () => {
         <div className="w-full rounded-3xl mx-auto">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={40}
-            loop={true}
-            centeredSlides={true}
+            spaceBetween={20}
             navigation={{
               nextEl: '.custom-next',
               prevEl: '.custom-prev',
@@ -46,7 +45,8 @@ const WockSection1 = () => {
             breakpoints={{
               0: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
+              1024: { slidesPerView: 2.5 },
+              1280: { slidesPerView: 3 },
             }}
             pagination={{ clickable: true }}
             autoplay={{ delay: 3500, disableOnInteraction: false }}

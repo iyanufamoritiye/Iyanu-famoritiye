@@ -29,21 +29,21 @@ const HomeSection2 = () => {
     <div>
       <div
         className="flex flex-col justify-center items-center mt-12 bg-app-bg-main
-       p-4 xl:p-12  pt-8  rounded-3xl mb-24"
+       p-4 xl:p-12 pt-8  rounded-3xl mb-24"
       >
         <div className="flex  flex-col items-center mb-8 text-app-text xl:mb-24">
           <h1 className=" text-2xl text-center xl:text-4xl font-semibold  mb-4 md:mb-6 ">
             Works and Projects completed
           </h1>
 
-          <p className="text-lg text-center font-semibold text-app-text-dark xl:w-4/5">
+          <p className="text-lg text-center font-semibold text-app-text xl:w-4/5">
             Check out some of my awesome projects, meticulously crafted with
             love and dedication, each one reflecting the passion and soul I
             poured into every detail.
           </p>
         </div>
 
-        <div className="grid place-items-center mt-12 grid-cols-1 mb-6  w-full md:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {projects.slice(0, 3).map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}

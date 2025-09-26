@@ -1,7 +1,7 @@
 #navLink a.active {
-  color: var(--color-app-bg);
+  color: var(--color-app-nav-active);
 }
 
 #navLink a:hover {
-  color: var(--color-app-bg);
+  color: var(--color-app-nav-active);
 }
