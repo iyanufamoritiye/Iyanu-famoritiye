@@ -3,10 +3,10 @@ import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import CustomButton from '../button/CustomButton';
-import image3 from '/assets/image3.svg';
 import { socialMediaLinks, Links } from '../../data/data';
 import { Sun, Moon, Zap, Star, CheckCircle, Info } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
+import { programmerImage } from '@/assets/images';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -61,7 +61,7 @@ const Navbar = () => {
     <div className="flex flex-col  sticky top-0 z-10 justify-between w-full">
       <div className=" hidden md:flex justify-between bg-app-bg items-center py-2 px-4 ">
         <div className="flex gap-4 text-app-text">
-          <img src={image3} alt="text icon" className="stroke-2  size-8" />
+          <img src={programmerImage} alt="text icon" className="stroke-2  size-8" />
           <h1 className=" text-xl font-bold">Iyanu</h1>
         </div>
 

@@ -1,55 +1,15 @@
 import React from "react";
-import iyanu from "/assets/iyanu.png";
 import CustomButton from "../button/CustomButton";
 import { ArrowDownToLine, GraduationCap, Mail } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import EducationCard from "../EducationCard";
+import { Educations, Experiences } from "@/data/data";
+import { Iyanu } from "@/assets/images";
 
 const AboutSec1 = () => {
   const navigate = useNavigate();
 
-  const Educations = [
-    {
-      date: "2013 - 2015",
-      title: "  National Diploma of Computer science",
-      school: "Moshood abiola polytechnic ",
-    },
-    {
-      date: "2017 - 2020",
-      title: "Higher National Diploma of Computer science",
-      school: "Moshood abiola polytechnic ",
-    },
-    {
-      date: "2023",
-      title: " Front-end with HTML,CSS and JavaScript",
-      school: "Udemy ",
-    },
 
-    {
-      date: "2024  ",
-      title: "React Intermediate",
-      school: " KodeCamp",
-    },
-  ];
-
-  const Experiences = [
-    {
-      date: "2016 - 2017",
-      title: " junior FrontEnd engineer intenship",
-      school: "Tony elumelu foundation",
-    },
-    {
-      date: "2021 - 2022",
-      title: "Technical support",
-      school: "H D'interieur ",
-    },
-
-    {
-      date: "2024  ",
-      title: "React frontEnd Intermediate Eng",
-      school: " KodeCamp",
-    },
-  ];
 
   const handleClick = () => {
     window.scrollTo({
@@ -62,11 +22,11 @@ const AboutSec1 = () => {
     <div>
       <div className="flex text-app-text flex-col md:flex-row gap-4 lg:gap-12 w-full lg:h-[500px] mb-16  ">
         <div className="hidden  text-app-text text-center md:flex flex-col justify-center px-4 items-center gap-5 bg-app-bg-main rounded-3xl w-full md:w-[40%] h-[350px] lg:h-full">
-          <div className="rounded-full bg-error-dark w-64 md:w-60 md:h-64 lg:w-64 h-72 relative">
+          <div className="rounded-full bg-error-dark w-64 md:w-60 lg:w-64 h-72 relative">
             <img
-              src={iyanu}
+              src={Iyanu}
               alt="iyanu"
-              className=" w-48  md:w-44 lg:w-48 left-8 right-0 rounded-full  absolute -top-20    "
+              className="w-48 md:w-44 lg:w-48 rounded-full absolute -top-20 left-1/2 transform -translate-x-1/2"
             />
           </div>
         </div>

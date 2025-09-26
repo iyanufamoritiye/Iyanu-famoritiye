@@ -3,36 +3,56 @@ import {
   Github,
   Linkedin,
 } from 'lucide-react';
+import {
+  jsLogo,
+  cssLogo,
+  jsSmallLogo,
+  reactLogo,
+  gitLogo,
+  xProjectImg,
+  ominiFoodImg,
+  ecommerceImg,
+  portfolioImg,
+  userDashboardImg,
+  landingPageImg,
+  countryApiImg,
+  todoListImg,
+  decadevImg,
+  codeMagazineImg,
+  tefImg,
+  kodecampImg,
+  kodehauzImg,
+} from '@/assets/images';
 
 
 
 export const languages: LanguagesType[] = [
   {
-    icon: '/assets/javascript_logo.svg',
+    icon: jsLogo,
     alt: 'javascript logo',
   },
   {
-    icon: '/assets/css_logo.svg',
+    icon: cssLogo,
     alt: 'cssLogo',
   },
 
   {
-    icon: '/assets/js_logo.svg',
+    icon: jsSmallLogo,
     alt: 'jsLogo',
   },
   {
-    icon: '/assets/react_logo.svg',
+    icon: reactLogo,
     alt: 'React',
   },
   {
-    icon: '/assets/git_logo.svg',
+    icon: gitLogo,
     alt: 'Git',
   },
 ];
 
 export const projects: ProjectType[] = [
   {
-    image: '/assets/x_project.png',
+    image: xProjectImg,
     projectName: 'Website',
     company: 'KodeCamp',
     title: 'X-Project',
@@ -42,7 +62,7 @@ export const projects: ProjectType[] = [
       structured curriculums, and industry-driven courses designed to prepare learners for real-world roles.`,
   },
   {
-    image: '/assets/omini_food.png',
+    image: ominiFoodImg,
     projectName: 'Website',
     company: 'Udemy',
     title: 'OmniFood',
@@ -52,7 +72,7 @@ export const projects: ProjectType[] = [
       while optimizing time with automated scheduling and order tracking.`,
   },
   {
-    image: '/assets/ecommerce.png',
+    image: ecommerceImg,
     projectName: 'Website',
     company: 'KodeCamp',
     title: 'Online Store',
@@ -62,7 +82,7 @@ export const projects: ProjectType[] = [
       and order management capabilities.`,
   },
   {
-    image: '/assets/portfolio.png',
+    image: portfolioImg,
     projectName: 'Website',
     company: 'Personal',
     title: 'My Portfolio',
@@ -71,7 +91,7 @@ export const projects: ProjectType[] = [
       professional projects, skills, and case studies in a clean, responsive interface.`,
   },
   {
-    image: '/assets/user_dashboard.png',
+    image: userDashboardImg,
     projectName: 'Website',
     company: 'KodeCamp',
     title: 'User Dashboard',
@@ -80,7 +100,7 @@ export const projects: ProjectType[] = [
       search functionality, and responsive layouts. Optimized for usability and scalability in real-world applications.`,
   },
   {
-    image: '/assets/landing_page.png',
+    image: landingPageImg,
     projectName: 'Website',
     company: 'KodeCamp',
     title: 'Landing Page',
@@ -89,7 +109,7 @@ export const projects: ProjectType[] = [
       modern design elements to highlight product offerings effectively.`,
   },
   {
-    image: '/assets/country_api.png',
+    image: countryApiImg,
     projectName: 'Website',
     company: 'KodeCamp',
     title: 'Countries API',
@@ -98,7 +118,7 @@ export const projects: ProjectType[] = [
       populations, regions, and languages. Users can filter and search countries seamlessly.`,
   },
   {
-    image: '/assets/todo_list.png',
+    image: todoListImg,
     projectName: 'Website',
     company: 'KodeCamp',
     title: 'Todo List',
@@ -107,7 +127,7 @@ export const projects: ProjectType[] = [
       organize tasks. Integrated responsive design for easy use across devices.`,
   },
   {
-    image: '/assets/todo_list.png',
+    image: todoListImg,
     projectName: 'Website',
     company: 'KodeCamp',
     title: 'Todo List API (CSR)',
@@ -116,7 +136,7 @@ export const projects: ProjectType[] = [
       and delete tasks with real-time updates, showcasing dynamic state management.`,
   },
   {
-    image: '/assets/todo_list.png',
+    image: todoListImg,
     projectName: 'Website',
     company: 'KodeCamp',
     title: 'Todo List API (SSR)',
@@ -125,7 +145,7 @@ export const projects: ProjectType[] = [
       for improved SEO, performance, and faster data delivery compared to CSR.`,
   },
   {
-    image: '/assets/decadev.png',
+    image: decadevImg,
     projectName: 'Website',
     company: 'Decadev',
     title: 'Decadev CleanYard',
@@ -134,7 +154,7 @@ export const projects: ProjectType[] = [
       services clearly with intuitive navigation and strong visuals.`,
   },
   {
-    image: '/assets/code_magazine.png',
+    image: codeMagazineImg,
     projectName: 'Website',
     company: 'Udemy',
     title: 'Code Magazine',
@@ -167,7 +187,7 @@ export const Links = [
 export const companies: Company[] = [
   {
     name: 'Tony Elumelu Foundation',
-    icon: '/assets/TEF.png',
+    icon: tefImg,
     position: 'Entrepreneurship Program Beneficiary',
   },
   {
@@ -178,14 +198,56 @@ export const companies: Company[] = [
   {
     name: 'KodeCamp',
     light: true,
-    icon: '/assets/kodecamp.png',
+    icon: kodecampImg,
     position: 'Intermediate Frontend Developer (React)',
   },
   {
     name: 'KodeHauz',
     light: true,
-    icon: '/assets/kodeHauz.png',
+    icon: kodehauzImg,
     position: 'Mid Frontend Developer Intern',
   },
 ];
 
+  export const Educations = [
+    {
+      date: "2013 - 2015",
+      title: "  National Diploma of Computer science",
+      school: "Moshood abiola polytechnic ",
+    },
+    {
+      date: "2017 - 2020",
+      title: "Higher National Diploma of Computer science",
+      school: "Moshood abiola polytechnic ",
+    },
+    {
+      date: "2023",
+      title: " Front-end with HTML,CSS and JavaScript",
+      school: "Udemy ",
+    },
+
+    {
+      date: "2024  ",
+      title: "React Intermediate",
+      school: " KodeCamp",
+    },
+  ];
+
+  export const Experiences = [
+    {
+      date: "2016 - 2017",
+      title: " junior FrontEnd engineer intenship",
+      school: "Tony elumelu foundation",
+    },
+    {
+      date: "2021 - 2022",
+      title: "Technical support",
+      school: "H D'interieur ",
+    },
+
+    {
+      date: "2024  ",
+      title: "React frontEnd Intermediate Eng",
+      school: " KodeCamp",
+    },
+  ];

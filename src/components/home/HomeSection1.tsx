@@ -3,6 +3,7 @@ import { ArrowDownToLine } from 'lucide-react';
 import CustomButton from '../button/CustomButton';
 import { companies, languages } from '../../data/data';
 import { useTheme } from '@/contexts/ThemeContext';
+import { Iyanu } from '@/assets/images';
 
 const HomeSection1 = () => {
   const { theme } = useTheme();
@@ -24,12 +25,12 @@ const HomeSection1 = () => {
         >
           <div className="rounded-full bg-error-dark w-64 h-72 md:w-60 md:h-64 xl:w-64 xl:h-72 relative">
             <img
-              src="/assets/iyanu.png"
+              src={Iyanu}
               alt="iyanu"
-              loading="lazy"
               className="w-48  md:w-44 xl:w-48 left-8 right-0 rounded-full absolute -top-20    "
             />
           </div>
+
           <h2 className="text-2xl font-bold w-full ">Iyanu Henry Famoritiye</h2>
           <span className="text-base font-normal">Software Engineer</span>
           <p className="text-base font-medium ">
