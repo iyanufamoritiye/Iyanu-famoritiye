@@ -1,9 +1,10 @@
 export type ProjectType = {
   image: string;
-  projectName: string;
+  type: string;
+  status: 'personal project' | 'in development' | 'coming soon' | 'live';
   company: string;
   title: string;
-  link: string;
+  link?: string;
   description: string;
 };
 

@@ -20,42 +20,145 @@ import {
   decadevImg,
   codeMagazineImg,
   tefImg,
+  KodeCamp,
   kodecampImg,
   kodehauzImg,
+  kodecampLms,
+  KodeHauzWebsite,
+  jobboard,
+  cypherpal,
+  mentorstower,
 } from '@/assets/images';
+
 
 
 
 export const languages: LanguagesType[] = [
   {
-    icon: jsLogo,
-    alt: 'javascript logo',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    alt: 'JavaScript',
   },
   {
-    icon: cssLogo,
-    alt: 'cssLogo',
-  },
-
-  {
-    icon: jsSmallLogo,
-    alt: 'jsLogo',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    alt: 'TypeScript',
   },
   {
-    icon: reactLogo,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
     alt: 'React',
   },
   {
-    icon: gitLogo,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+    alt: 'Next.js',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
+    alt: 'Vue.js',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+    alt: 'Node.js',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+    alt: 'Express.js',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg',
+    alt: 'Redux Toolkit',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+    alt: 'HTML5',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+    alt: 'CSS3',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
+    alt: 'Tailwind CSS',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+    alt: 'Firebase',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
+    alt: 'Jest',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
     alt: 'Git',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+    alt: 'GitHub',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg',
+    alt: 'Material UI',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg',
+    alt: 'Vite',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
+    alt: 'Figma',
   },
 ];
 
 export const projects: ProjectType[] = [
   {
+    image: kodecampLms,
+    type: 'Website',
+    company: 'kodehauz',
+    title: 'Kodecamp website',
+    status: 'live',
+    link: 'https://lms.kode.camp/',
+    description: `A comprehensive online training platform focused on upskilling individuals in web development, mobile app development, and other tech fields, providing hands-on learning and real-world projects.`,
+  },
+  {
+    image: KodeHauzWebsite,
+    type: 'website',
+    company: 'kodehauz',
+    title: 'kodehuaz solution',
+    link: 'https://kodehauz.com/',
+    status: 'live',
+    description: `At KodeHauz, we believe in building a community of innovators who are passionate about making a difference in the tech world.`,
+  },
+
+  {
+    image: mentorstower,
+    type: 'Website',
+    company: 'mentors tower',
+    title: 'Mentors tower',
+    status: 'coming soon',
+    description: `A platform that connects mentors and mentees to foster personal and professional growth. We aim to provide valuable guidance and support, helping individuals achieve their goals.`,
+  },
+  {
+    image: cypherpal,
+    type: 'website',
+    company: 'CypherPal',
+    title: 'CypherPal',
+    status: 'coming soon',
+    description: `A crypto platform that can easily track all your crypto transactions across wallets and exchanges, automatically calculate your gains, and generate accurate tax reports—ready to file in minutes.`,
+  },
+  {
+    image: jobboard,
+    type: 'Website',
+    company: 'kodehauz',
+    title: 'Job Board',
+    status: 'coming soon',
+    description: `A platform that Easily discover tailored opportunities, connect with top employers, and apply seamlessly. With a user-friendly interface, recommendations, and real-time updates, landing your dream job has never been simpler.`,
+  },
+
+  {
     image: xProjectImg,
-    projectName: 'Website',
+    type: 'Website',
     company: 'KodeCamp',
     title: 'X-Project',
+    status: 'in development',
     link: 'https://x-project-fe-ten.vercel.app/',
     description: `Collaborated with a cross-functional team to build Kodecamp X, an ed-tech platform that delivers 
       affordable and accessible technology education. The platform features flexible learning options, 
@@ -63,104 +166,24 @@ export const projects: ProjectType[] = [
   },
   {
     image: ominiFoodImg,
-    projectName: 'Website',
+    type: 'Website',
     company: 'Udemy',
     title: 'OmniFood',
+    status: 'personal project',
     link: 'https://iyanufamoritiye.github.io/myominifoodproject/',
     description: `Developed a modern AI-powered food ordering platform that generates customized weekly meal plans 
       based on user preferences, allergies, and dietary needs. It helps users maintain healthy eating habits 
       while optimizing time with automated scheduling and order tracking.`,
   },
   {
-    image: ecommerceImg,
-    projectName: 'Website',
-    company: 'KodeCamp',
-    title: 'Online Store',
-    link: 'https://myecommerce-zeta-six.vercel.app/',
-    description: `Built a full-featured eCommerce web application where users can browse products, search by keywords, 
-      add items to carts or wishlists, and proceed with secure checkout. The platform includes real-time product updates 
-      and order management capabilities.`,
-  },
-  {
     image: portfolioImg,
-    projectName: 'Website',
+    type: 'Website',
     company: 'Personal',
     title: 'My Portfolio',
+    status: 'personal project',
     link: 'https://my-portfolio-silk-three-88.vercel.app/',
     description: `Designed and developed a personal portfolio using React.js and Tailwind CSS to showcase 
       professional projects, skills, and case studies in a clean, responsive interface.`,
-  },
-  {
-    image: userDashboardImg,
-    projectName: 'Website',
-    company: 'KodeCamp',
-    title: 'User Dashboard',
-    link: 'https://user-dashboard-eosin-beta.vercel.app/',
-    description: `Implemented an interactive user dashboard with account creation, profile management, 
-      search functionality, and responsive layouts. Optimized for usability and scalability in real-world applications.`,
-  },
-  {
-    image: landingPageImg,
-    projectName: 'Website',
-    company: 'KodeCamp',
-    title: 'Landing Page',
-    link: 'https://myecommerce-zeta-six.vercel.app/',
-    description: `Designed a simple, responsive landing page with clear call-to-action sections and 
-      modern design elements to highlight product offerings effectively.`,
-  },
-  {
-    image: countryApiImg,
-    projectName: 'Website',
-    company: 'KodeCamp',
-    title: 'Countries API',
-    link: 'https://countriesapi-2b1k.vercel.app/',
-    description: `Developed a web app that consumes a public REST API to display country data, including flags, 
-      populations, regions, and languages. Users can filter and search countries seamlessly.`,
-  },
-  {
-    image: todoListImg,
-    projectName: 'Website',
-    company: 'KodeCamp',
-    title: 'Todo List',
-    link: 'https://todolist-nine-rosy.vercel.app/',
-    description: `Built a full-stack task management application where users can create, update, and 
-      organize tasks. Integrated responsive design for easy use across devices.`,
-  },
-  {
-    image: todoListImg,
-    projectName: 'Website',
-    company: 'KodeCamp',
-    title: 'Todo List API (CSR)',
-    link: 'https://todo-list-my-api.vercel.app/',
-    description: `Created a client-side rendered todo list powered by an API. Users can add, update, 
-      and delete tasks with real-time updates, showcasing dynamic state management.`,
-  },
-  {
-    image: todoListImg,
-    projectName: 'Website',
-    company: 'KodeCamp',
-    title: 'Todo List API (SSR)',
-    link: 'https://todo-ssr-sigma.vercel.app/todos',
-    description: `Built a server-side rendered todo list application integrated with an API. Designed 
-      for improved SEO, performance, and faster data delivery compared to CSR.`,
-  },
-  {
-    image: decadevImg,
-    projectName: 'Website',
-    company: 'Decadev',
-    title: 'Decadev CleanYard',
-    link: 'https://figma-decadev.vercel.app/',
-    description: `Developed a marketing landing page for a yard-cleaning service. Focused on presenting 
-      services clearly with intuitive navigation and strong visuals.`,
-  },
-  {
-    image: codeMagazineImg,
-    projectName: 'Website',
-    company: 'Udemy',
-    title: 'Code Magazine',
-    link: 'https://code-magazine.vercel.app/',
-    description: `Created a code magazine demo site to practice and demonstrate modern CSS layouts including 
-      Flexbox and Grid. The design showcases articles, images, and multi-column layouts.`,
   },
 ];
 
@@ -235,19 +258,18 @@ export const companies: Company[] = [
 
   export const Experiences = [
     {
-      date: "2016 - 2017",
-      title: " junior FrontEnd engineer intenship",
-      school: "Tony elumelu foundation",
+      date: '2016 - 2017',
+      title: ' junior FrontEnd engineer intenship',
+      school: 'Tony elumelu foundation',
     },
     {
-      date: "2021 - 2022",
-      title: "Technical support",
-      school: "H D'interieur ",
+      date: '2024  ',
+      title: 'React frontEnd Intermediate Eng',
+      school: ' KodeCamp',
     },
-
     {
-      date: "2024  ",
-      title: "React frontEnd Intermediate Eng",
-      school: " KodeCamp",
+      date: '2025  ',
+      title: 'React frontEnd Intermediate Eng',
+      school: ' KodeHuaz',
     },
   ];

@@ -19,11 +19,17 @@ import codeMagazineImg from '@/assets/code_magazine.png';
 
 import tefImg from '@/assets/TEF.png';
 import kodecampImg from '@/assets/kodecamp.png';
+import kodecampLms from '@/assets/KodeCampLms.png';
+import KodeHauzWebsite from '@/assets/Kodehauzwebsite.png'
 import kodehauzImg from '@/assets/kodeHauz.png';
 
 import CssLogo from '@/assets/css_logo.svg'
 import Iyanu from '@/assets/iyanu.png';
 import programmerImage from '@/assets/image3.svg';
+import KodeCamp from '@/assets/KodeCampLms.png';
+import jobboard from '@/assets/jobboard.png'
+import cypherpal from '@/assets/cypherpal.png'
+import mentorstower from '@/assets/mentorstower.png'
 
 export {
   jsLogo,
@@ -43,9 +49,15 @@ export {
   codeMagazineImg,
   tefImg,
   kodecampImg,
+  KodeCamp,
   kodehauzImg,
   CssLogo,
   Iyanu,
   reactIcon,
   programmerImage,
+  kodecampLms,
+  KodeHauzWebsite,
+  jobboard,
+  cypherpal,
+  mentorstower,
 };

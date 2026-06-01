@@ -2,11 +2,16 @@ import React from 'react';
 import { ArrowDownToLine } from 'lucide-react';
 import CustomButton from '../button/CustomButton';
 import { companies, languages } from '../../data/data';
-import { useTheme } from '@/contexts/ThemeContext';
 import { Iyanu } from '@/assets/images';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import IconWithLabel from '../IconWithLabel';
+import CompanyCard from '../CompanyCard';
+import CTASection from '../CTASection';
 
 const HomeSection1 = () => {
-  const { theme } = useTheme();
   const handleResumeDownload = () => {
     const link = document.createElement('a');
     link.href = '/iyanu_resume.pdf';
@@ -32,34 +37,36 @@ const HomeSection1 = () => {
           </div>
 
           <h2 className="text-2xl font-bold w-full ">Iyanu Henry Famoritiye</h2>
-          <span className="text-base font-normal">Software Engineer</span>
+          <span className="text-base font-normal">FrontEnd Dev</span>
           <p className="text-base font-medium ">
-            I am a passionate software engineer with a background in web
-            development and a strong desire to learn and grow.
+            I craft engaging, responsive, and high-impact scalable web
+            applications.
           </p>
-          <div>
-            <div className="grid grid-cols-5 gap-4">
-              {languages.map((language, index) => (
-                <div
-                  key={index}
-                  className="rounded-full border-2 border-gray-scale-500 p-2 hover:scale-110"
-                >
-                  <img
-                    src={language.icon}
-                    alt={language.alt}
-                    className=" size-6 md:size-4 xl:size-6 text-app-text"
-                  />
-                </div>
+          <div className="w-full">
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3500, disableOnInteraction: false }}
+              spaceBetween={8}
+              slidesPerView="auto"
+              className="w-[90%] py-2"
+            >
+              {languages.map((language) => (
+                <SwiperSlide key={language.alt} className="!w-fit">
+                  <IconWithLabel icon={language.icon} label={language.alt} />
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
           </div>
         </div>
         <div className="p-4 h-[350px] md:h-full xl:px-12  flex flex-col justify-center w-full md:w-[60%] bg-app-bg-main text-app-text rounded-3xl">
           <h3 className="text-lg font-medium  mb-4">Hello There!</h3>
-          <p className="text-xl xl:text-4xl font-medium  mb-4 xl:w-4/5">
-            I'm Iyanu Henry Famoritiye, a Front-End Developer with expertise in
-            creating user-friendly, responsive interfaces and delivering
-            reliable web solutions.
+          <p className="text-base xl:text-2xl font-medium  mb-4 ">
+            I'm Iyanu Henry Famoritiye, a Frontend Software Engineer with
+            expertise in building scalable web applications, modern user
+            interfaces, and robust frontend architectures. I am committed to
+            creating performant, accessible, and maintainable solutions that
+            deliver measurable business value and exceptional user experiences.
           </p>
           <div className="flex gap-2 items-center mb-4">
             <div className="rounded-full size-4 bg-app-bg animate-bounce"></div>
@@ -81,45 +88,27 @@ const HomeSection1 = () => {
           </div>
         </div>
       </div>
-      <div className="bg-app-bg-main rounded-3xl w-full p-8 md:p-12">
-        <h1 className="text-xl text-app-text font-semibold mb-12">
-          Companies Worked With
-        </h1>
-        <div className="flex flex-wrap gap-6 justify-between w-full">
-          {companies.map((company, index) => (
-            <div
-              key={index}
-              className="flex w-full md:w-[300px] flex-col gap-2 "
-            >
-              <div
-                className={`w-full h-24 flex items-center justify-center p-1 rounded-md shadow ${
-                  company.light && theme != 'light'
-                    ? 'bg-gray-200'
-                    : 'bg-gray-600'
-                }`}
-              >
-                {company.icon ? (
-                  <img
-                    src={company.icon}
-                    alt={company.name}
-                    className="max-h-16 w-full object-contain"
-                  />
-                ) : (
-                  <div className="font-bold text-2xl text-app-bg-main">
-                    {company.name}
-                  </div>
-                )}
-              </div>
-              <div className="text-xl text-app-text font-extrabold md:text-3xl">
-                {company.name}
-              </div>
-              <p className="text-base text-app-text font-medium">
-                {company.position}
-              </p>
-            </div>
-          ))}
+      <CTASection
+        title="Companies Worked With"
+        className="bg-inherit border-4 border-app-bg-main"
+      >
+        <div className="w-full">
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3500, disableOnInteraction: false }}
+            spaceBetween={20}
+            slidesPerView="auto"
+            className="w-[90%] py-2"
+          >
+            {companies.map((company, index) => (
+              <SwiperSlide key={company.name} className="!w-fit">
+                <CompanyCard company={company} index={index} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-      </div>
+      </CTASection>
     </div>
   );
 };

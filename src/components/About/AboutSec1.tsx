@@ -9,8 +9,6 @@ import { Iyanu } from "@/assets/images";
 const AboutSec1 = () => {
   const navigate = useNavigate();
 
-
-
   const handleClick = () => {
     window.scrollTo({
       top: 0,
@@ -36,22 +34,16 @@ const AboutSec1 = () => {
             I am Iyanu Henry Famoritiye, a Front-End Developer
           </h1>
           <p className="text-base lg:text-lg mb-4 md:w-[80%] text-app-text lg:w-full  ">
-            I am a Nigeria-based front-end developer specializing in creating
-            engaging and user-friendly web applications. With a strong
-            foundation in web development and administration, I have honed my
-            skills in building responsive and visually appealing interfaces.
-          </p>
-
-          <p className="text-base lg:text-lg md:w-[80%] text-app-text lg:w-full ">
-            I hold a degree in Computer Science from Moshood Abiola Polytechnic,
-            which has equipped me with essential technical knowledge and
-            problem-solving abilities. I am committed to continuous learning and
-            staying updated with the latest industry trends and technologies.
-          </p>
-          <p className="text-base lg:text-lg mb-4 md:w-[80%] text-app-text lg:w-full">
-            My work adheres to the highest standards of professional ethics,
-            ensuring that I deliver quality results while following best
-            practices in software development.
+            Over the years, I have worked on projects ranging from responsive
+            websites to scalable web applications, helping teams deliver
+            products that meet both user and business needs. My focus is
+            frontend development, where I build modern user interfaces, reusable
+            component libraries, and maintainable applications using React,
+            Next.js, TypeScript, and Tailwind CSS. I have experience integrating
+            REST APIs and working with microservice-based systems to deliver
+            reliable and scalable solutions. I enjoy transforming complex
+            requirements into intuitive user experiences while maintaining a
+            strong focus on performance, accessibility, and code quality.
           </p>
           <div>
             <CustomButton
